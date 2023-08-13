@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIACUS TRAVEL | Biuro Podróży</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="logo.png" alt="logo"></a>
+        <nav>
+            <form method="POST" action="login.php">
+                <input type="submit" name="oferty" value="OFERTY">
+                <input type="submit" name="promocje" value="PROMOCJE">
+                <input type="submit" name="galeria" value="GALERIA">
+                <input type="submit" name="blog" value="BLOG">
+                <input type="submit" name="kontakt" value="KONTAKT">
+            </form>
+        </nav>
+    </header>
+    <div id="kalkulator">
+        <form>
+            <section>
+                <label for="gdzie">Kierunek*</label>
+                <select id="gdzie">
+                    <option disabled selected hidden>Dokąd wyjazd?</option>
+                    <optgroup label="Polska">
+                        <option>Tatry</option>
+                        <option>Beskid Żywiecki</option>
+                        <option>Karkonosze</option>
+                    </optgroup>
+                    <optgroup label="Włochy">
+                        <option>Aply Bergamskie - Pizzo Famo</option>
+                        <option>Aply Julijskie - Triglav</option>
+                        <option>Piramide Vincent</option>
+                        <option>Dolomity</option>
+                    </optgroup>
+                    <optgroup label="Gruzja">
+                        <option>Góry Gomborskie</option>
+                        <option>Kaukaz</option>
+                    </optgroup>
+                    <optgroup label="Szkocja">
+                        <option>Corta-ma Law</option>
+                        <option>Campsies - Meikle Bin</option>
+                        <option>The Cobbler</option>
+                        <option>Ben Venue</option>
+                    </optgroup>
+                </select>
+            </section>
+            <section>
+                <label for="kiedy">Termin*</label>
+                <input type="date" id="kiedy">
+            </section>
+            <section>
+                <label for="ile_dni">Pobyt*</label>
+                <input type="number" id="ile_dni" min="1" placeholder="Ile dni?">
+            </section>
+            <section>
+                <label for="ile_os">Uczestnicy*</label>
+                <input type="number" id="ile_os" min="1" placeholder="Ile osób?">
+            </section>
+            <section>
+                <label for="transport">Transport*</label>
+                <select id="transport">
+                    <option disabled selected hidden>Jak dotrzesz?</option>
+                    <option>Samolot</option>
+                    <option>Autobus</option>
+                    <option>Własny</option>
+                </select>
+            </section>
+            <section>
+                <label for="rabat_kod">Rabat <a href="rabat.html">Uzyskaj rabat</a></label>
+                <input type="text" id="rabat_kod" placeholder="Kod rabatowy">
+            </section>
+            <section>
+                <label for="licz"></label>
+                <input type="button" value="OSZACUJ KOSZT" id="licz">
+            </section>
+        </form>
+        <p id="calc_result"></p>
+    </div>
+    <div class="main">
+        <div id="main_img">
+            <img src="Baner.gif" alt="baner">
+        </div> 
+        <hr>
+        <h1>Biuro WIACUS TRAVEL!!!</h1>
+        <ul>
+            <li><h3>Chcesz zwiedzić świat znajdujący się 1000 metrów nad poziomem morza?</h3></li>
+            <li><h3>Chcesz się spróbować w Via Ferrat?</h3></li>
+            <li><h3>Interesują Cię piękne szlaki z malowniczym krajobrazem?</h3></li>
+            <li><h3>Możesz określić się miłośnikiem wypraw wysokogórskich?</h3></li>
+        </ul>
+        <h2>Jeśli na wszystkie pytania odpowiedziałeś twierdząco koniecznie zapoznaj się z <a href="oferty.php">ofertą WIACUS TRAVEL!</a>&nbsp;Znajdziesz tam propozycje wyjazdów w góry dla <span style="text-decoration:underline;">KAŻDEGO!</span> Począwszy od pieszych wędrówek granią kończąc na szlakach turystycznych o charakterze wspinaczkowym.</h2>
+    </div>
+    <div id="timer">
+        <hr>
+        <h1>Długo jeszcze do wakacji?</h1>
+        <h2>Teraz jest: <span id="time_now" style="color:rgb(253, 129, 129) ;"></span></h2>
+        <h2>Wakacje rozpoczynają się już <span style="color:red ;">23 czerwca 2023, 10:00!!!</span></h2>
+        <h2>Czyli dokładnie za: </h2>
+        <div class="timer_grid">
+            <section>
+                <h3>TYGODNI</h3>
+                <h3 id="holiday_week"></h3>
+            </section>
+            <section>
+                <h3>DNI</h3>
+                <h3 id="holiday_day"></h3>
+            </section>
+            <section>
+                <h3>GODZIN</h3>
+                <h3 id="holiday_houre"></h3>
+            </section>
+            <section>
+                <h3>MINUT</h3>
+                <h3 id="holiday_min"></h3>
+            </section>
+            <section>
+                <h3>SEKUND</h3>
+                <h3 id="holiday_sec"></h3>
+            </section>
+        </div>
+        <h2>A to znaczy: </h2>
+        <div class="timer_grid">
+            <section>
+                <h3>TYGODNI</h3>
+                <h3 id="holiday_week_time"></h3>
+            </section>
+            <section>
+                <h3>DNI</h3>
+                <h3 id="holiday_day_time"></h3>
+            </section>
+            <section>
+                <h3>GODZIN</h3>
+                <h3 id="holiday_houre_time"></h3>
+            </section>
+            <section>
+                <h3>MINUT</h3>
+                <h3 id="holiday_min_time"></h3>
+            </section>
+            <section>
+                <h3>SEKUND</h3>
+                <h3 id="holiday_sec_time"></h3>
+            </section>
+        </div>
+    </div>
+    <div class="main">
+        <hr>
+        <div id="gallery">
+            <h1 style="text-align:left;">Sam zerknij jak piękne są góry</h1>
+            <div id="zdj">
+                <img src="https://cdn.pixabay.com/photo/2019/04/22/01/51/nature-4145438_960_720.jpg" alt="gory">
+                <img src="https://cdn.pixabay.com/photo/2022/11/14/23/08/mountains-7592709__340.jpg" alt="gory"> 
+                <img src="https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272__340.jpg" alt="gory">
+                <img src="https://cdn.pixabay.com/photo/2019/12/06/05/46/alpine-village-4676673__340.jpg" alt="gory">
+                <img src="https://t3.ftcdn.net/jpg/01/21/39/22/360_F_121392228_qzju93M3zKCRfFuDEi3LpA5kSayIfdSM.jpg" alt="gory">
+                <img src="https://cdn.pixabay.com/photo/2018/03/16/16/57/pleso-3231824__340.jpg" alt="gory">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/08/06/snow-1868299__340.jpg" alt="gory">
+                <img src="https://cdn.pixabay.com/photo/2016/09/13/18/22/tatry-1667930__340.jpg" alt="gory">
+                <img src="https://t4.ftcdn.net/jpg/05/26/70/13/360_F_526701346_2tEzW8A3X3ghyAXNM28aWYoRit1PSoZJ.jpg" alt="gory">
+            </div>
+            <iframe src="https://www.youtube.com/embed/YHusujC8MOw" title="Magnificent Mountains, Forests, Rivers and Lakes of the Globe 4k" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer>
+        <p>Stroną wykonał: Kamil Wiącek<sup>&copy;</sup></p>
+        <span><a href="http://www.facebook.pl" target="_blank">Î</a></span>
+        <span><a href="http://www.instagram.com" target="_blank">Ú</a></span>
+        <span><a href="http://www.youtube.com" target="_blank">Ö</a></span>
+    </footer>
+    <script src="script_timer.js"></script>
+    <script src="script_calc.js"></script>
+</body>
+</html>

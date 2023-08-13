@@ -1,0 +1,630 @@
+/* FONTS */
+@font-face {
+    font-family: Andada;
+    src: url("FONTS/Andada-Bold.otf");
+}
+
+@font-face {
+    font-family: Social_font;
+    src: url("FONTS/Social_Media_Circled.otf");
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(160,255,151,0.4) 0%, rgba(255,255,255,1) 35%, rgba(249,255,249,1) 65%, rgba(160,255,151,0.4) 100%);}
+
+body{
+    height: auto;
+    margin: auto;
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0 0;
+    font-size: 20px;
+    background-color: white;
+}
+
+header img{
+    height: 75px;
+}
+
+nav form{
+    display: flex;
+    padding-right: 10px;
+}
+
+nav form input[type=submit]{
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(243, 247, 133);
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+nav form input[type=submit]:hover{
+    background-color: rgb(243, 243, 26);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#kalkulator, .main_oferty{
+    width: 100%; 
+    height: 150px;
+    background-color: rgb(0, 119, 255);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#kalkulator form, .main_oferty form{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.main_oferty section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: center;
+}
+
+#kalkulator section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 13%;
+    justify-content: center;
+}
+
+#kalkulator input, #kalkulator select, .main_oferty input, .main_oferty select{
+    width: 10em;
+    height: 2.5em;
+    text-align: center;
+}
+
+select option, optgroup{
+    text-align: left;
+}
+
+#kalkulator section a{
+    text-decoration: none;
+    font-size: 10px;
+    color: rgb(255, 0, 0);
+}
+
+#kalkulator input[type=button], .main_oferty input[type=submit]{
+    background-color: yellow;
+    border:none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    height: 2.5em;
+    width: 13em;
+    transition: 0.4s;
+}
+
+#kalkulator input[type=button]:hover, .main_oferty input[type=submit]:hover{
+    background-color: rgb(253, 253, 115);
+    cursor: pointer;
+}
+
+#oferty_slider{
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#list-slider{
+    width: 100%;
+    text-align: center;
+}
+
+#slider img{
+    width: 100%;
+    height: 100%;
+}
+
+#slider input[type=button]{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    z-index: 1;
+    border: 1px solid rgb(42, 42, 255);
+    background-color: rgb(255, 252, 244);
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(42, 42, 255);
+    transition: 0.5s;
+}
+
+#slider input[type=button]:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+    color: brown;
+    border-color: brown;
+}
+
+#timer{
+    width: 60%;
+    height: auto;
+    margin: 30px 0 0 0;
+    font-family: Andada;
+}
+
+.timer_grid{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+}
+
+.timer_grid > section{
+    border-bottom: 1px solid black;
+    width: 15%;
+}
+
+.main, .main_oferty{
+    width: 60%;
+    margin-top: 30px;
+    font-family: Andada;
+    color: black;
+}
+
+#main_img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main h2{
+    text-align: justify;
+    margin: 5px;
+}
+
+.main h2 a{
+    text-decoration: none;
+    color: rgb(0, 122, 230);
+    font-style: italic;
+}
+
+.main ul{
+    list-style-image: url("checked.png");
+}
+
+hr{
+    margin: 25px 0 15px 0;
+    box-shadow: 0px 0px 12px black;
+}
+
+#gallery{
+    width: 100%;
+    text-align: center;
+}
+
+#gallery img{
+    width: 25%;
+    padding: 20px;
+}
+
+#gallery img:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+#gallery iframe{
+    width: 100%;
+    height: 600px;
+}
+
+#login{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.login_box{
+    width: 50%;
+}
+
+#log_result{
+    width: 40%;
+    text-align: center;
+}
+
+#kalkulator marquee{
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+.wpis{
+    padding: 10px;
+    border: 1px dashed black;
+    border-radius: 5%;
+}
+
+.wpis form input{
+    border: none;
+    background-color: rgba(255, 0, 0, 0.274);
+    transition: 1s;
+}
+
+.wpis form input:hover{
+    background-color: rgba(255, 0, 0, 0.884);
+    cursor: pointer;
+}
+
+.wpis p, .oferta_wypis p{
+    background-color: rgb(219, 219, 219);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.ul{
+    text-decoration:underline;
+}
+
+.oferta_wypis a{ 
+    text-decoration: none;
+    color: rgb(255, 57, 57);
+    font-size: 20px;
+    padding: 10px;
+    transition: 1s;
+}
+
+.oferta_wypis a:hover{
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+footer{
+    width: 100%;
+    min-height: 30px;
+    background-color: rgb(85, 85, 85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+footer span a{
+    font-family: Social_font;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+footer span{
+    margin: 0 5px 0 5px;
+}
+
+.tab_oferty{
+    border-collapse: collapse;
+    width: 60%;
+    margin: 10px;
+    display: table;
+}
+
+.tab_oferty th{
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.tab_oferty tr{
+    background-color: rgb(253, 247, 163);
+    border-bottom: 2px solid rgb(228, 195, 30);
+}
+
+.tab_oferty tr td{
+    text-align: center;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.tab_oferty tr td a{
+    text-decoration: none;
+    color: rgb(40, 61, 255);
+}
+
+.tab_oferty tr td a:hover{
+    text-shadow: 1px 1px 1px blue;
+}
+
+#color_game{
+    text-align: center;
+    background-color: honeydew;
+    padding: 5px;
+    border: 2px solid gainsboro;
+    margin-bottom: 15px;
+}
+
+#color_game h2{
+    text-align: center;
+}
+
+#color_game form{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#color_game .bt{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+#color_game #reset_bt{
+    margin: 20px 0 30px 0;
+    background-color: white;
+    border: 1px solid dimgray;
+    border-radius: 10px;
+    height: 25px;
+    width: 100px;
+}
+
+.komentarz{
+    border-bottom: 2px solid black;
+}
+
+.komentarz span{
+    font-weight: bold; 
+    font-size: 20px;
+    color: rgb(255, 57, 50);
+}
+
+#dodaj_komentarz{
+    margin: 40px 10px 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#dodaj_komentarz input[type='submit']{
+    background-color: yellow;
+    border:none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    height: 40%;
+    width: 200px;
+    padding: 5px;
+    transition: 0.4s;
+}
+
+#dodaj_komentarz input[type='submit']:hover{
+    background-color: rgb(253, 253, 115);
+    cursor: pointer;
+}
+
+#kontakt_link{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#kontakt_link a{
+    text-decoration: none;
+    background-color: rgb(251, 255, 0);
+    padding: 20px;
+    border-radius: 50%;
+    color: black;
+    font-size: 20px;
+}
+
+#kontakt_link a:hover{
+    background-color: black;
+    color: rgb(251, 255, 0);
+}
+
+#form_kontakt{
+    margin: 25px 0 15px 0;
+    text-align: center;
+}
+
+#form_kontakt form{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    margin: auto;
+}
+
+#form_kontakt input{
+    width: 17em;
+}
+
+.kont_bt{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.kont_bt input{
+    max-width: 10em;
+    padding: 7px;
+    background-color: yellow;
+    border:none;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.kont_bt input:hover{
+    background-color: black;
+    color: yellow;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu input{
+    width: 10em;
+}
+
+.usun_kom{
+    margin-top: 5px;
+}
+
+.usun_kom input{
+    background-color: rgba(255, 0, 0, 0.445);
+    border: red;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.usun_kom input:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+/* RWD */
+
+@media only screen and (max-width: 1210px){
+   #kalkulator form, .main_oferty form{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+   } 
+   #kalkulator, .main_oferty{
+    height: auto;
+    width: 100%;
+   }
+   #kalkulator section, .main_oferty section{
+    width: 100%;
+    align-items: center;
+    margin: 3px;
+   }
+   #kalkulator select, #kalkulator input, .main_oferty select, .main_oferty input{
+    width: 75%;
+   }
+   #img_promocja{
+    width: 100%;
+   }
+   #oferty_slider{
+    width: 100%;
+    }
+}
+
+@media only screen and (max-width: 966px) {
+    .timer_grid{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timer_grid section{
+        width: 100%;
+    }
+
+    #zdj{
+        display: flex;
+        flex-direction: column;
+    }
+    #zdj img{
+        width: auto;
+    }
+    #gallery iframe{
+        height: 250px;
+    }
+    #main_img img{
+        width: 100%;
+    }
+    #login{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #login hr{
+        width: 90%;
+    }
+    .login_box{
+        width: 100%;
+    }
+    #kontakt_link{
+        flex-direction: column;
+    }
+    .kont_bt{
+        flex-direction: column;
+        height: 4em;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    header{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    nav form{
+        flex-direction: column;
+        width: 75%;
+    }
+    .main, #timer{
+        width: 100%;
+    }
+    .timer_grid{
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .tab_oferty tr td, .tab_oferty tr th{
+        font-size: 0.7em;
+    }
+}
+@media only screen and (max-width: 450px) {
+    textarea{
+        width: 90%;
+    }
+    form{
+        width: 100%;
+    }
+    #form_kontakt{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    footer{
+        flex-direction: column;
+    }
+}

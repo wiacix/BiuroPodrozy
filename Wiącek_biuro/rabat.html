@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIACUS TRAVEL | Biuro Podróży</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="script_game_color.js"></script>
+</head>
+<body onload="choose_color()">
+    <header>
+        <a href="index.html"><img src="logo.png" alt="logo"></a>
+        <nav>
+            <form method="POST" action="login.php">
+                <input type="submit" name="oferty" value="OFERTY">
+                <input type="submit" name="promocje" value="PROMOCJE">
+                <input type="submit" name="galeria" value="GALERIA">
+                <input type="submit" name="blog" value="BLOG">
+                <input type="submit" name="kontakt" value="KONTAKT">
+            </form>
+        </nav>
+    </header>
+    <div id="kalkulator">
+        <form>
+            <section>
+                <label for="gdzie">Kierunek*</label>
+                <select id="gdzie">
+                    <option disabled selected hidden>Dokąd wyjazd?</option>
+                    <optgroup label="Polska">
+                        <option>Tatry</option>
+                        <option>Beskid Żywiecki</option>
+                        <option>Karkonosze</option>
+                    </optgroup>
+                    <optgroup label="Włochy">
+                        <option>Aply Bergamskie - Pizzo Famo</option>
+                        <option>Aply Julijskie - Triglav</option>
+                        <option>Piramide Vincent</option>
+                        <option>Dolomity</option>
+                    </optgroup>
+                    <optgroup label="Gruzja">
+                        <option>Góry Gomborskie</option>
+                        <option>Kaukaz</option>
+                    </optgroup>
+                    <optgroup label="Szkocja">
+                        <option>Corta-ma Law</option>
+                        <option>Campsies - Meikle Bin</option>
+                        <option>The Cobbler</option>
+                        <option>Ben Venue</option>
+                    </optgroup>
+                </select>
+            </section>
+            <section>
+                <label for="kiedy">Termin*</label>
+                <input type="date" id="kiedy">
+            </section>
+            <section>
+                <label for="ile_dni">Pobyt*</label>
+                <input type="number" id="ile_dni" min="1" placeholder="Ile dni?">
+            </section>
+            <section>
+                <label for="ile_os">Uczestnicy*</label>
+                <input type="number" id="ile_os" min="1" placeholder="Ile osób?">
+            </section>
+            <section>
+                <label for="transport">Transport*</label>
+                <select id="transport">
+                    <option disabled selected hidden>Jak dotrzesz?</option>
+                    <option>Samolot</option>
+                    <option>Autobus</option>
+                    <option>Własny</option>
+                </select>
+            </section>
+            <section>
+                <label for="rabat_kod">Rabat <a href="rabat.html">Uzyskaj rabat</a></label>
+                <input type="text" id="rabat_kod" placeholder="Kod rabatowy">
+            </section>
+            <section>
+                <label for="licz"></label>
+                <input type="button" value="OSZACUJ KOSZT" id="licz">
+            </section>
+        </form>
+        <p id="calc_result"></p>
+    </div>
+    <div class="main">
+        <h1>Zdobąź kod rabatowy!</h1>
+        <div id="color_game">
+            <h1>Zgadnij kolor!</h1>
+            <h2 id="rgb_id"></h2><br>
+            <form>
+                <input type="button" class="bt" id="bt1" onclick="isCorrect(1)" value=" ">
+                <input type="button" class="bt" id="bt2" onclick="isCorrect(2)" value=" ">
+                <input type="button" class="bt" id="bt3" onclick="isCorrect(3)" value=" ">
+                <input type="button" class="bt" id="bt4" onclick="isCorrect(4)" value=" ">
+                <input type="button" class="bt" id="bt5" onclick="isCorrect(5)" value=" ">
+                <input type="button" class="bt" id="bt6" onclick="isCorrect(6)" value=" ">
+            </form>
+            <h2 id="result"></h2>
+            <input type="button" id="reset_bt" value="Resetuj" onclick="choose_color()">
+        </div>
+    </div>
+    <footer>
+        <p>Stroną wykonał: Kamil Wiącek<sup>&copy;</sup></p>
+        <span><a href="http://www.facebook.pl" target="_blank">Î</a></span>
+        <span><a href="http://www.instagram.com" target="_blank">Ú</a></span>
+        <span><a href="http://www.youtube.com" target="_blank">Ö</a></span>
+    </footer>
+    <script src="script_calc.js"></script>
+</body>
+</html>
